@@ -200,11 +200,20 @@ with tab1:
             st.error(f"❌ Error processing file: {str(e)}")
             st.info("Make sure your CSV file has the same columns as the training data.")
     else:
+<<<<<<< Updated upstream
         st.info("👆 Upload a CSV file to get started with batch predictions")
         st.markdown("---")
         st.markdown("### Quick Single Prediction")
         st.markdown("For single predictions, you would need to create input fields for all features.")
         st.markdown(f"**Total features required:** {len(feature_names)}")
+=======
+        st.markdown("""
+        <div style='text-align: center; padding: 3rem; background: #e8f4f8; border-radius: 10px; margin: 2rem 0; border: 2px dashed #1f77b4;'>
+            <h3 style='color: #2c3e50; margin-top: 0;'>👆 Upload file CSV untuk memulai prediksi</h3>
+            <p style='color: #34495e; font-size: 1.1rem;'>Pilih file CSV yang berisi data apartemen yang ingin diprediksi harganya</p>
+        </div>
+        """, unsafe_allow_html=True)
+>>>>>>> Stashed changes
         
         with st.expander("View required features"):
             st.write(feature_names)
